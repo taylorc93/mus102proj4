@@ -1,0 +1,40 @@
+body{
+	background-color: #D4FFE9;
+}
+
+canvas {
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+#content{
+	margin: 0 auto;
+	padding: 0;
+	width: 950px;
+}
+
+
+#canvas-wrapper{
+	text-align: center;
+	height: 450px;
+	margin: 0 auto;
+	box-shadow: 0 0 2em #000;
+}
+
+#timeline-controls{
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.info{
+	position: relative;
+	top: 10px;
+	margin: 0px auto 30px auto;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 0 0 2em #000;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+
