@@ -6,10 +6,6 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css">
-
-		<!-- Placed scripts at bottom to enable faster loading -->
-	<script src="jquery.min.js"></script>
-	<script src="scripts.js" type="text/javascript"></script>
 </head>
 
 <body onload="init()">
@@ -18,11 +14,31 @@
 
 		<div class="text-center info" id="usageInfo">
 			<p> This is my visualization for Mozart's fugue.  Each line represents a voice in the
-				fugue.  Each box on top of these lines represents a major event in the fugue. Click
-				on the box to display the information about this event below! To view the events
-				in order, click on the first event (selected by default at the beginning) and hit 
-				next event until all events have been cycled through!
+				fugue/sonata.  Each shape on top of these lines represents a major event in the 
+				piece. Click on the box to display the information about that event below! The
+				visualization is broken up in three parts, the exposition, development, and 
+				recapitulation.  To swap between each, just click the appropriate button!
 			</p>
+		</div>
+
+		<div id="timeline-controls">
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<button type="button" class="btn btn-danger" id="expoButton"> 
+						Exposition
+					</button>
+				</div>
+				<div class="col-md-4 text-center">
+					<button type="button" class="btn btn-primary" id="devButton"> 
+						Development 
+					</button>
+				</div>
+				<div class="col-md-4 text-center">
+					<button type="button" class="btn btn-success" id="recapButton"> 
+						Recapitulation 
+					</button>
+				</div>
+			</div>
 		</div>
 
 		<div id="canvas-wrapper"> 
@@ -32,22 +48,55 @@
 				this as it is meant to be seen.
 			</canvas>
 		</div>
-
-		<div id="timeline-controls">
-			<div class="row">
-				<div class="col-md-6 text-center">
-					<button type="button" class="btn btn-danger"> Previous Event </button>
-				</div>
-				<div class="col-md-6 text-center">
-					<button type="button" class="btn btn-success"> Next Event </button>
-				</div>
-			</div>
-		</div>
-
 		<div class="info" id="eventInfo">
-			<p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus </p>
+		</div>
+		<div class="info" id="questionAnswers">
+			<h1 class="text-center"> Question 1 </h1>
+			<p class="question">
+				The Classical Sonata is generally weighted towards homophonic or simple polyphonic 
+				accompaniment. How does Mozart balance this stylistic expectation with the polyphonic demands of fugue?
+			</p> 
+			<p>
+				Mozart balances these expectations by including elements of both throughout the piece. During the majority of the composition, the voices work in a polyphonic manner with lots of imitation and repetition. However, at various points (primarily at the ends of sonata sections) Mozart keeps the voices fairly static and tightly knit, which creates a homophonic texture. By efficiently balancing the amount of homophonic and polyphonic motion, Mozart is able to create a piece that has the good qualities of both.
+			</p>
+
+			<h1 class="text-center"> Question 2 </h1>
+			<p class="question">
+				What is the most complex moment, contrapuntally? What independent melodic lines are present, where’d they come from, how are they manipulated, and why might they appear at that stage of the piece? 
+			</p> 
+			<p>
+				The most complex and interesting contrapuntal moment happens between measures 100-108. During this section of the piece, each voice has a unique rhythmic phrase that they sequence through in order to create incredibly interesting harmonies. The most amazing thing is that the counterpoint is overwhelmingly consonant throughout the voices even though they are so rhythmically unique. It is likely that this happens here because it signals a transition to homophonic motion and the consonance between these voices acts as a good blend of both polyphonic and homophonic motion.
+			</p>
+
+			<h1 class="text-center"> Question 3 </h1>
+			<p class="question">
+				Describe how the harmonic/melodic sequence works that occurs across the first half of the development section. 
+			</p> 
+			<p>
+				This is definitely my favorite part of this piece.  Mozart repeats the primary subject that was brought up in the exposition throughout the entire sequence but in strikingly different keys.  The dissonance and sequencing make the listener feel much farther away from the home key.  The other notable feature is the use of chromatic walk-ups or walk-downs that give the piece a sort of drawl and lagging quality in combination with the suspended/nonsuspended whole notes in the other voices.  This slows the piece down remarkably and sounds incredibly beautiful. 
+			</p>
+
+			<h1 class="text-center"> Question 4 </h1>
+			<p class="question">
+				Offer an explanation of why the recap seems to have differences in structure from the exposition.
+			</p> 
+			<p>
+				The recapitulation is very different from the exposition. It is quite noticeably the shortest section in this piece and probably contains the most homophonic motion.  Many of the voices blend together rhythmically and harmonically to slow the piece down and draw attention to the movement of one voice. This is done to draw attention to the unique harmonic choices that Mozart makes during this section.  Mozart decides to remain in keys that are distant from home for the majority of the section and then only returns to the home key of G for the last 2 measures, and he only cadences on G for 1 beat. This is very unusual in Classical Music, which usually ends much more definitevly in I.
+			</p>
+
+			<h1 class="text-center"> Question 5 </h1>
+			<p class="question">
+				There’s one instance of really dramatic mode mixture in this piece. Where is it and what purpose does it serve? 
+			</p> 
+			<p>
+				I'm not sure.  I honestly couldn't find this. Sorry.
+			</p>
 		</div>
 	</div>
+
+	<!-- Placed scripts at bottom to enable faster loading -->
+	<script src="jquery.min.js"></script>
+	<script src="scripts.js" type="text/javascript"></script>
 </body>
 
 

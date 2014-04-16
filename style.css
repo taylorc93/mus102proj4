@@ -13,17 +13,17 @@ canvas {
 	width: 950px;
 }
 
-
 #canvas-wrapper{
 	text-align: center;
 	height: 450px;
 	margin: 0 auto;
 	box-shadow: 0 0 2em #000;
+	margin-bottom: 20px;
 }
 
 #timeline-controls{
 	padding: 10px;
-	margin: 0 auto;
+	margin: 0 auto 10px auto;
 }
 
 .info{
@@ -37,4 +37,10 @@ canvas {
 	font-weight: bold;
 }
 
+#usageInfo{
+	margin-bottom: 20px;
+}
 
+.question{
+	font-style: italic;
+}
