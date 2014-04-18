@@ -37,8 +37,39 @@ var expositionEventsText = [["Voice 1 enters at measure 4.  It closely mimics vo
                         "Voice 4 is relatively independent up to measure 107, although it is not the focus of the piece.  It works with voices 2 and 3 at various points to harmonize voice 1 and sometimes it works with voice 1 to provide nice counterpoint",
                         "Voice 4 works closely with the other voices to end the exposition."]]; 
 
-var developmentEventsText = [["","","",""], ["","","",""], ["","","",""], ["","","",""]];
-var recapitulationEventsText = [["","","",], ["","","",], ["","","",], ["","","",]];
+var developmentEventsText = [["Voice 1 reenters on measure 127 with a chromatic walkup that reminds the listener that it exists, before exclusively using whole notes (many of which are chromatic in nature).  It briefly harmonizes with the other voices at measure 140 to cadence on measure 141",
+                            "Voice 1 reintroduces the primary subject, which then gets repeated by voice 4 in a call and response manner.  After reintroducing it, voice 1 either repeats it or rests until measure 158",
+                            "Voice 1 works with the other voices to harmonize this section in interesting ways until measure 173",
+                            "Voice 1 repeats its part from the recapitulation (with various alterations to reflect the differing keys) in measures 16-51 until measure 221",
+                            "Voice 1 repeats the primary subject and then works with the other voices to create various sequences until measure 234",
+                            "Voice 1 works with all the other voices to create a very homophonic section that closes out the development section"], 
+                            ["Voice 2 exclusively harmonizes the other voices until the cadence on measure 141",
+                            "Voice 2 works closely with voice 3 to harmonize the piece while voices 1 and 4 are the focus",
+                            "Voice 2 works with the other voices to harmonize this section in interesting ways until measure 173",
+                            "Voice 2 repeats its part from the recapitulation (with various alterations to reflect the differing keys) in measures 16-51 until measure 221",
+                            "Voice 2 exclusively works with the other voices to create various sequences until measure 234",
+                            "Voice 2 works with all the other voices to create a very homophonic section that closes out the development section"], 
+                            ["Voice 3 starts the development section with a chromatic walkup that is imitated by voices 1 and 4 (but mostly 4) up til the cadence at measure 141",
+                            "Voice 3 works with voice 2 to harmonize this section while voices 1 and 4 are the main focus",
+                            "Voice 3 works with the other voices to harmonize this section in interesting ways until measure 173",
+                            "Voice 3 repeats its part from the recapitulation (with various alterations to reflect the differing keys) in measures 16-51 until measure 221",
+                            "Voice 3 exclusively works with the other voices to create various sequences until measure 234",
+                            "Voice 3 works with all the other voices to create a very homophonic section that closes out the development section"], 
+                            ["Voice 4 reenters on measure 129 with a chromatic walkup and begins a call and response section with voice 3.  It continues this until the cadence at measure 141",
+                            "Voice 4 works with voice 1 to repeat the primary subject in altered keys.  It does this in a call and response fashion up until measure 158",
+                            "Voice 4 works with the other voices to harmonize this section in interesting ways until measure 173",
+                            "Voice 4 repeats its part from the recapitulation (with various alterations to reflect the differing keys) in measures 16-51 until measure 221",
+                            "Voice 4 exclusively works with the other voices to create various sequences until measure 234",
+                            "Voice 4 works with all the other voices to create a very homophonic section that closes out the development section"]];
+
+var recapitulationEventsText = [["Voice 1 reenters on measure 272 and has a very chromatic melody.  It works with the other voices when it is not the focus to slow the piece down",
+                                "Voice 1 repeats the primary subject at the beginning of 282 and works with other voices for the remaining few measures to conclude the piece by cadencing in G with a PAC"], 
+                                ["Voice 2 never stops and almost exclusively works with the other voices to harmonize the focus of the piece for the next 16 measures",
+                                "Voice 2 imitates voice 1 from measures 282-287 before working with every other voice to end the song"], 
+                                ["Voice 3 reenters after a very brief pause before outlining the chromatic walkup that other voices imitate for the next 16 measures.  It also works with other voices to harmonize piece",
+                                "Voice 3 repeats the primary subject and then harmonizes with the other 3 voices to finish the piece"], 
+                                ["Voice 4 reenters at measure 270 and plays more chromatic walkups than any other voice in this section.  It does this until measure 282",
+                                "Voice 4 mirrors voice 3 for the first ~6 measures and then works with all the other voices to end the piece"]];
 
 var numEvents = 0;
 
